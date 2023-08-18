@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <title>Donations</title>
+    <style>
+      
+        .nav-logo {
+      width: auto;
+      height: 60px;
+
+    }
+    .nav-link {
+      color: #333;
+      transition: color 0.2s ease-in-out;
+    }
+    .nav-link:hover {
+      color: #ea3434;
+    }
+    .content-card {
+      transition: transform 0.2s ease-in-out;
+    }
+    .content-card:hover {
+      transform: translateY(-5px);
+    }
+    .nav-container {
+      background-color: #f7f7f7;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    </style>
+</head>
+<body class="bg-blue-400 ">
+    <header class="bg-blue-500 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html">
+          <img src="logo.jpg" alt="HealthyAds Logo" class="nav-logo mx-4">
+            </a>
+          <nav class="flex space-x-8 mx-8 h-20 ">
+            <a href="https://www.who.int/" class="nav-link">WHO</a>
+            <a href="donations.html" class="nav-link">Donations</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+    <div class="container py-8 align-middle">
+        <form class="bg-violet-800 py-10 px-10 align-middle rounded-lg shadow-md" action="">
+            <h1 class="text-2xl font-semibold mb-4 main_heading">Donation Form</h1>
+            <h2 class="text-lg font-semibold mb-2">Contact Information</h2>
+            <p class="mb-2">Name: <input type="text" name="name" class="border rounded-md p-2 w-full"></p>
+            <fieldset class="mb-4">
+                <legend class="text-lg font-semibold">Gender</legend>
+                <p>
+                    Male: <input type="radio" name="Gender" id="male" class="mr-2">
+                    Female: <input type="radio" name="Gender" id="female" class="mr-2">
+                </p>
+            </fieldset>
+            <p class="mb-4">Address: <textarea name="Address" id="ad" rows="4" class="border rounded-md p-2 w-full"></textarea></p>
+            <p class="mb-2">Email: <input type="email" name="email" id="email" class="border rounded-md p-2 w-full"></p>
+            <p class="mb-2">Pincode: <input type="number" name="number" class="border rounded-md p-2 w-full"></p>
+
+            <h2 class="text-lg font-semibold mb-2">Payment Type</h2>
+            <p class="mb-2">
+                Card type:
+                <select name="cardtype" id="cardtype" class="border rounded-md p-2">
+                    <option value="">----Select card----</option>
+                    <option value="Visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="Rupay">Rupay</option>
+                </select>
+            </p>
+            <p class="mb-2">Card number: <input type="number" name="cardnumber" class="border rounded-md p-2 w-full"></p>
+            <p class="mb-2">Expiry date: <input type="date" name="date" class="border rounded-md p-2"></p>
+            <p class="mb-2">CVV: <input type="password" name="cvv" class="border rounded-md p-2"></p>
+
+            <button type="submit" name="submit" class="bg-blue-500 text-white rounded-md py-2 px-4 hover:bg-blue-600">Submit</button>
+        </form>
+    </div>
+
+    <footer class="bg-gray-200 py-4 text-center">
+        <p>&copy; 2023 Healthyee. All rights reserved.</p>
+    </footer>
+</body>
+</html>
