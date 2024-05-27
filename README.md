@@ -37,7 +37,7 @@ This project is a web application designed to provide information about various 
 2. **Navigate to the project directory**:
 
    ```sh
-   cd healthcare-info-app
+   cd Healthyee
    ```
 
 3. **Open `index.html` in your web browser**:
