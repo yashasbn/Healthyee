@@ -30,7 +30,8 @@ This project is a web application designed to provide information about various 
 1. **Clone the repository**:
 
    ```sh
-   git clone https://github.com/yashasbn/healthcare-info-app.git
+   
+   git clone https://github.com/yashasbn/Healthyee.git
    ```
 
 2. **Navigate to the project directory**:
